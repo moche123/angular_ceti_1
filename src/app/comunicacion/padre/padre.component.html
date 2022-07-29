@@ -1,0 +1,8 @@
+<h2>Estoy en el padre</h2>
+<p>{{numeroPadreAlHijo}}: Numero que el padre le enviara al hijo</p>
+
+<p>{{numeroRecibidoDelHijo}} Numero que el padre recibe del hijo</p>
+
+<button (click)="cambiarNumeroQuePadreEnviaHijo()" >Enviar al hijo</button>
+
+<app-hijo [numeroPadreAlHijo]="numeroPadreAlHijo" (numeroHijoAlPadre)="recibirDelHijo($event)"></app-hijo>

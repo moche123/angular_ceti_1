@@ -1,0 +1,11 @@
+
+<h3>{{tituloParaPipe | uppercase}}</h3>
+<div>
+    <!-- DIRECTIVA NGFOR -->
+    <section *ngFor="let personaje of personajeObs$ | async">
+        {{personaje.name}}
+
+        <img [src]="personaje.image" alt="">
+        <!-- {{personaje.image}} -->
+    </section>
+</div>
